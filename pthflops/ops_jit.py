@@ -341,7 +341,7 @@ def count_ops_jit(model: torch.nn.Module,
         if verbose:
             print_table(all_data)
         print("Input size: {0}".format(tuple(input.shape)))
-        print("{:,} FLOPs or approx. {:,.2f} GFLOPs".format(ops, ops / 1e+9))
+        # print("{:,} FLOPs or approx. {:,.2f} GFLOPs".format(ops, ops / 1e+9))
 
     if model_status:
         model.train()
